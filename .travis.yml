@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+- '4.1'
+before_install:
+- npm install -g istanbul gulp
+after_install:
+- gulp build
+script:
+- istanbul cover test.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage

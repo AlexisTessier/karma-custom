@@ -1,0 +1,36 @@
+{
+  "name": "karma-custom",
+  "version": "1.0.0",
+  "description": "A karma adapter to run custom and framework free test suites",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover test.js",
+    "build": "gulp",
+    "prepublish": "npm test & npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisTessier/karma-custom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexisTessier/karma-custom/issues"
+  },
+  "homepage": "https://github.com/AlexisTessier/karma-custom#readme",
+  "keywords": [
+    "karma-plugin",
+    "karma-adapter",
+    "custom"
+  ],
+  "author": "Alexis Tessier <alexis.tessier@designdo.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "coveralls": "^2.11.4",
+    "gulp": "^3.9.0",
+    "gulp-batch": "^1.0.5",
+    "gulp-mustache": "^2.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.5"
+  }
+}
