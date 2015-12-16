@@ -4,6 +4,9 @@ karma-custom
 [![Build Status](https://travis-ci.org/AlexisTessier/karma-custom.svg?branch=master)](https://travis-ci.org/AlexisTessier/karma-custom)
 [![Coverage Status](https://coveralls.io/repos/AlexisTessier/karma-custom/badge.svg?branch=master&service=github)](https://coveralls.io/github/AlexisTessier/karma-custom?branch=master)
 
+[![master version](https://img.shields.io/badge/master%20version-1.1.0-blue.svg)](https://github.com/AlexisTessier/karma-custom#readme)
+[![npm version](https://badge.fury.io/js/karma-custom.svg)](https://badge.fury.io/js/karma-custom)
+
 [Home Page](https://github.com/AlexisTessier/karma-custom#readme)
 
 A karma adapter to run custom and framework free test suites
