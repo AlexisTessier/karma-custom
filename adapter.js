@@ -3,7 +3,7 @@
 function createStartFn(karma) {
   // This function will be assigned to `window.__karma__.start`:
   return function () {
-    window.karmaCustomEnv.execute(karma);
+    window.karmaCustomEnv.execute(karma, window);
   };
 }
 

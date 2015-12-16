@@ -4,7 +4,7 @@
   "description": "A karma adapter to run custom and framework free test suites",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover test.js",
+    "test": "istanbul cover test/index.js",
     "build": "gulp",
     "prepublish": "npm test & npm run build"
   },
@@ -26,11 +26,13 @@
   "devDependencies": {
     "chalk": "^1.1.1",
     "coveralls": "^2.11.4",
+    "global": "^4.3.0",
     "gulp": "^3.9.0",
     "gulp-batch": "^1.0.5",
     "gulp-mustache": "^2.0.1",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-watch": "^4.3.5"
-  }
+  },
+  "dependencies": {}
 }

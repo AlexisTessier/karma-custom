@@ -33,20 +33,23 @@ Add 'custom' to the list of available frameworks in you karma.conf.js
 var assert = require('assert');
 
 window.karmaCustomEnv = {};
-window.karmaCustomEnv.execute = function(karma) {
+window.karmaCustomEnv.execute = function(karma, window) {
 	//You have access to the karma framework API
-	karma.info({"Custom Test": "started"});
+	karma.info({dump: "started"});
 
 	try{
 		//do your custom test here
 		assert(false);
 
-		karma.result(/*...*/)
+		karma.result({success: true})
 	}catch(err){
-		karma.error(err);
+		karma.error({
+			success: false,
+			log: [err.message]
+		});
 	}
 
-	karma.complete();
+	karma.complete({});
 };
 
 ```
