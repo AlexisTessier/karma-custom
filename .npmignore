@@ -1,5 +1,7 @@
 coverage
-README.md.mustache
+README.mustache
+gulpfile.js
+.travis.yml
 
 logs
 *.log

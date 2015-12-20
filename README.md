@@ -1,7 +1,7 @@
-karma-custom - 1.1.2
+karma-custom
 ================
 
-[![master version](https://img.shields.io/badge/master%20version-1.1.2-blue.svg)](https://github.com/AlexisTessier/karma-custom#readme)
+[![version](https://img.shields.io/badge/version-1.1.3-blue.svg)](https://github.com/AlexisTessier/karma-custom#readme)
 [![npm version](https://badge.fury.io/js/karma-custom.svg)](https://badge.fury.io/js/karma-custom)
 
 [![Build Status](https://travis-ci.org/AlexisTessier/karma-custom.svg?branch=master)](https://travis-ci.org/AlexisTessier/karma-custom)

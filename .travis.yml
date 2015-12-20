@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '4.1'
 before_install:
-- npm install -g istanbul gulp
+- npm install -g istanbul gulp dependency-check
 after_install:
 - gulp build
 script:
