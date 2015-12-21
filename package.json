@@ -1,10 +1,10 @@
 {
   "name": "karma-custom",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A karma adapter to run custom and framework free test suites",
   "main": "index.js",
   "scripts": {
-    "test": "dependency-check package.json && istanbul cover test/index.js",
+    "test": "dependency-check package.json & istanbul cover test/index.js",
     "build": "gulp",
     "prepublish": "npm run build & npm test"
   },
