@@ -1,6 +1,6 @@
 {
   "name": "karma-custom",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A karma adapter to run custom and framework free test suites",
   "main": "index.js",
   "scripts": {
@@ -24,10 +24,9 @@
   "author": "Alexis Tessier <alexis.tessier@designdo.fr>",
   "license": "MIT",
   "devDependencies": {
-    "@alexistessier/gulp-workflow-common-task": "^2.0.0",
+    "@alexistessier/gulp-workflow-common-task": "^2.1.0",
     "chalk": "^1.1.1",
-    "coveralls": "^2.11.4",
+    "coveralls": "^2.11.6",
     "global": "^4.3.0"
-  },
-  "dependencies": {}
+  }
 }
