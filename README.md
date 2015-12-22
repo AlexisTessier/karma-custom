@@ -1,7 +1,7 @@
 karma-custom
 ================
 
-[![version](https://img.shields.io/badge/version-1.1.7-blue.svg)](https://github.com/AlexisTessier/karma-custom#readme)
+[![version](https://img.shields.io/badge/version-1.1.8-blue.svg)](https://github.com/AlexisTessier/karma-custom#readme)
 [![npm version](https://badge.fury.io/js/karma-custom.svg)](https://badge.fury.io/js/karma-custom)
 
 [![Build Status](https://travis-ci.org/AlexisTessier/karma-custom.svg?branch=master)](https://travis-ci.org/AlexisTessier/karma-custom)
@@ -30,32 +30,36 @@ npm install karma-custom
 How to use
 ----------
 
+[Karma](http://karma-runner.github.io/)
+
 Add 'custom' to the list of available frameworks in you karma.conf.js
 
 ```javascript
 //in your main-test-file.js
 
-//if you want to, for example, use the node assert module (via browserify)
-var assert = require('assert');
-
 window.karmaCustomEnv = {};
 window.karmaCustomEnv.execute = function(karma, window) {
-	//You have access to the karma framework API
-	karma.info({dump: "started"});
+	//use the node assert module (via browserify)
+    var assert = require('assert');
 
-	try{
-		//do your custom test here
-		assert(false);
+    //You have access to the karma framework API
+    console.log("Test suite started");
 
-		karma.result({success: true})
-	}catch(err){
-		karma.error({
-			success: false,
-			log: [err.message]
-		});
-	}
+    try{
+        //do your custom test here
+        assert(true);
 
-	karma.complete({});
+        karma.result({success: true})
+
+    }catch(err){
+        karma.result({
+            success: false,
+            suite: [],
+            log: [err.message]
+        });
+    }
+
+    karma.complete({});
 };
 
 ```
