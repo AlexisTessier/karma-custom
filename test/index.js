@@ -1,18 +1,15 @@
 'use strict';
 
-var assert = require('assert');
-var report = require('./report');
+var report = require('@alexistessier/report');
 
 try{
-	report.notice('==Test started==');
-
-	require('./report-test');
+	report('notice', '==Test started==');
 
 	require('./adapter-test');
 
-	report.complete();
+	report('success', '==Test ended==');
 }
 catch(err){
-	report.error(err.message);
+	report('error', err.message);
 	throw err;
 }
